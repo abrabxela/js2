@@ -63,7 +63,7 @@ const shoppingCart = [
 ];
 let totalPrice = 0;
 for (i = 0; i < shoppingCart.length; i++) {
-  totalPrice = totalPrice + shoppingCart[i].pricePerItem;
+  totalPrice = totalPrice + (shoppingCart[i].pricePerItem * shoppingCart[i].count);
 }
 console.log("Item 2. Total price: " + totalPrice);
 
